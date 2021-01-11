@@ -11,8 +11,10 @@ const products = [
      const  allPropValues = [];
 
      for (const item of arr) {
+       if(item[prop] != undefined){
          allPropValues.push(item[prop]);
      }
+    }
     console.log(allPropValues);
     return allPropValues;
   };
